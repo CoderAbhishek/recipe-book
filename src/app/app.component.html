@@ -1,0 +1,10 @@
+<app-header (featureSelected)="displayPage($event)"></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-recipes *ngIf="displayItem === 'recipe'"></app-recipes>
+            <app-shopping-list *ngIf="displayItem !== 'recipe'"></app-shopping-list>
+        </div>
+    </div>
+</div>
